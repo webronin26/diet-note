@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.webronin_26.diet_note.recorddetail.RecordDetailViewModel"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"
+            android:id="@+id/detail_guideline_ver_010" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"
+            android:id="@+id/detail_guideline_ver_090" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05"
+            android:id="@+id/detail_guideline_ho_005" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15"
+            android:id="@+id/detail_guideline_ho_015" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.30"
+            android:id="@+id/detail_guideline_ho_030" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45"
+            android:id="@+id/detail_guideline_ho_045" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55"
+            android:id="@+id/detail_guideline_ho_055" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65"
+            android:id="@+id/detail_guideline_ho_065" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75"
+            android:id="@+id/detail_guideline_ho_075" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80"
+            android:id="@+id/detail_guideline_ho_080" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90"
+            android:id="@+id/detail_guideline_ho_090" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toRightOf="@id/detail_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/detail_guideline_ver_090"
+            app:layout_constraintTop_toBottomOf="@id/detail_guideline_ho_005"
+            app:layout_constraintBottom_toTopOf="@id/detail_guideline_ho_015"
+            android:text="登入餐點的內容"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/detail_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/detail_guideline_ver_090"
+            app:layout_constraintTop_toBottomOf="@id/detail_guideline_ho_015"
+            app:layout_constraintBottom_toTopOf="@id/detail_guideline_ho_030"
+            android:background="@drawable/detail_input_background"
+            android:layout_margin="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="請輸入餐點名稱  - 限20字 "/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/detail_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:maxLines="1"
+                android:gravity="end"
+                android:maxLength="20"
+                android:layout_weight="2"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/detail_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/detail_guideline_ver_090"
+            app:layout_constraintTop_toBottomOf="@id/detail_guideline_ho_030"
+            app:layout_constraintBottom_toTopOf="@id/detail_guideline_ho_045"
+            android:background="@drawable/detail_input_background"
+            android:layout_margin="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="請輸入熱量(大卡) - 0 到 10萬 之間"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/detail_calories_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:maxLines="1"
+                android:gravity="end"
+                android:maxLength="6"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toRightOf="@id/detail_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/detail_guideline_ver_090"
+            app:layout_constraintTop_toBottomOf="@id/detail_guideline_ho_045"
+            app:layout_constraintBottom_toTopOf="@id/detail_guideline_ho_055"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="糖類\n(大卡)"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/detail_seek_bar_carbohydrate"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:bsb_thumb_color="@color/blue"
+                app:bsb_track_color="@color/grey"
+                app:bsb_second_track_color="@color/blue"
+                app:bsb_bubble_color="@color/blue"
+                app:bsb_min="0"
+                app:bsb_section_count="1"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="true"
+                app:bsb_show_section_mark="true"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toRightOf="@id/detail_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/detail_guideline_ver_090"
+            app:layout_constraintTop_toBottomOf="@id/detail_guideline_ho_055"
+            app:layout_constraintBottom_toTopOf="@id/detail_guideline_ho_065"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="蛋白質 \n (大卡)"
+                android:gravity="center"
+                android:textColor="@color/darkRed"/>
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/detail_seek_bar_protein"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:bsb_thumb_color="@color/red"
+                app:bsb_track_color="@color/grey"
+                app:bsb_bubble_color="@color/red"
+                app:bsb_second_track_color="@color/red"
+                app:bsb_min="0"
+                app:bsb_section_count="1"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="true"
+                app:bsb_show_section_mark="true"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toRightOf="@id/detail_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/detail_guideline_ver_090"
+            app:layout_constraintTop_toBottomOf="@id/detail_guideline_ho_065"
+            app:layout_constraintBottom_toTopOf="@id/detail_guideline_ho_075"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="油脂\n(大卡)"
+                android:gravity="center"
+                android:textColor="@color/dark_orange"
+                android:textStyle="bold"/>
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/detail_seek_bar_fat"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:bsb_thumb_color="@color/orange"
+                app:bsb_track_color="@color/grey"
+                app:bsb_bubble_color="@color/orange"
+                app:bsb_second_track_color="@color/orange"
+                app:bsb_min="0"
+                app:bsb_section_count="1"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="true"
+                app:bsb_show_section_mark="true"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/detail_guideline_ho_080"
+            app:layout_constraintLeft_toRightOf="@id/detail_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/detail_guideline_ver_090"
+            app:layout_constraintBottom_toTopOf="@id/detail_guideline_ho_090">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/detail_cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="取消"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/detail_cancel_background"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/detail_check_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="設定"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/detail_check_background"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.webronin_26.diet_note.main.MainViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05"
+            android:id="@+id/main_guideline_ho_005" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15"
+            android:id="@+id/main_guideline_ho_015" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45"
+            android:id="@+id/main_guideline_ho_045" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            android:id="@+id/main_guideline_ho_050" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6"
+            android:id="@+id/main_guideline_ho_060" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7"
+            android:id="@+id/main_guideline_ho_070" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75"
+            android:id="@+id/main_guideline_ho_075" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.83"
+            android:id="@+id/main_guideline_ho_083" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85"
+            android:id="@+id/main_guideline_ho_085" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.93"
+            android:id="@+id/main_guideline_ho_093" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95"
+            android:id="@+id/main_guideline_ho_095" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"
+            android:id="@+id/main_guideline_ver_005" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10"
+            android:id="@+id/main_guideline_ver_010" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.30"
+            android:id="@+id/main_guideline_ver_030" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90"
+            android:id="@+id/main_guideline_ver_090" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"
+            android:id="@+id/main_guideline_ver_095" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1"
+            android:id="@+id/main_guideline_ver_100" />
+
+        <LinearLayout
+            android:id="@+id/main_title_linear_layout"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/main_guideline_ho_005"
+            app:layout_constraintLeft_toRightOf="@id/main_guideline_ver_005"
+            app:layout_constraintBottom_toTopOf="@id/main_guideline_ho_060"
+            app:layout_constraintRight_toLeftOf="@id/main_guideline_ver_095"
+            android:background="@drawable/main_title_background"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/main_guideline_ho_005"
+            app:layout_constraintBottom_toTopOf="@id/main_guideline_ho_015"
+            app:layout_constraintLeft_toRightOf="@id/main_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/main_guideline_ver_090"
+            android:text="今日攝取的大卡為"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/darkRed"/>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/main_guideline_ho_015"
+            app:layout_constraintBottom_toTopOf="@id/main_guideline_ho_045"
+            app:layout_constraintRight_toLeftOf="@id/main_guideline_ver_090"
+            app:layout_constraintLeft_toRightOf="@id/main_guideline_ver_010">
+
+            <com.vaibhavlakhera.circularprogressview.CircularProgressView
+
+                app:progressValue="@{viewmodel.totalCalories.intValue()}"
+                app:totalValue="@{viewmodel.maxCalories.intValue()}"
+
+                android:id="@+id/main_circular_progress"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:fillColor="@color/white"
+                app:progressColor="@color/red"
+                app:totalColor="@color/light_orange"
+                app:progressTextColor="@color/black"
+                app:progressInterpolator="@android:anim/accelerate_decelerate_interpolator"
+                app:progressRoundCap="true"
+                app:progressTextEnabled="true"
+                app:progressTextSize="32sp"
+                app:progressTextType="progress"
+                app:progressWidth="12dp"
+                app:startAngle="270"
+                app:totalWidth="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/main_guideline_ho_050"
+            app:layout_constraintLeft_toRightOf="@id/main_guideline_ver_030"
+            app:layout_constraintBottom_toTopOf="@id/main_guideline_ho_070"
+            app:layout_constraintRight_toLeftOf="@id/main_guideline_ver_100"
+            android:background="@drawable/main_sub_tittle_background">
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="醣類"
+                    android:textColor="@color/blue"
+                    android:gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="蛋白質"
+                    android:textColor="@color/red"
+                    android:gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="油類"
+                    android:textColor="@color/dark_orange"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.app.progresviews.ProgressLine
+
+                    app:value="@{viewmodel.carbohydrate.intValue()}"
+                    app:valuePercentage="@{viewmodel.carbohydratePercent.intValue()}"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:definition="大卡"
+                    app:lineBarWidth="7dp"
+                    app:valueDefTextSize="20sp"
+                    app:lineProgressColor="@color/blue"
+                    app:underLineColor="@android:color/darker_gray"
+                    android:layout_margin="5dp"/>
+
+                <com.app.progresviews.ProgressLine
+
+                    app:value="@{viewmodel.protein.intValue()}"
+                    app:valuePercentage="@{viewmodel.proteinPercent.intValue()}"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:definition="大卡"
+                    app:lineBarWidth="7dp"
+                    app:valueDefTextSize="20sp"
+                    app:lineProgressColor="@color/red"
+                    app:underLineColor="@android:color/darker_gray"
+                    android:layout_margin="5dp"/>
+
+                <com.app.progresviews.ProgressLine
+
+                    app:value="@{viewmodel.fat.intValue()}"
+                    app:valuePercentage="@{viewmodel.fatPercent.intValue()}"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:definition="大卡"
+                    app:lineBarWidth="7dp"
+                    app:valueDefTextSize="20sp"
+                    app:lineProgressColor="@color/orange"
+                    app:underLineColor="@android:color/darker_gray"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_daily_record_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/main_guideline_ho_075"
+            app:layout_constraintBottom_toTopOf="@id/main_guideline_ho_083"
+            app:layout_constraintLeft_toRightOf="@id/main_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/main_guideline_ver_095"
+            android:background="@drawable/main_button_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                style="@style/AVLoadingIndicatorView.Small"
+                app:indicatorColor="@color/light_blue"
+                app:indicatorName="LineScalePulseOutRapidIndicator"
+                android:id="@+id/main_daily_record_animation_view"
+                android:layout_margin="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textColor="@color/black"
+                android:text="登入今日的飲食紀錄"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_history_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/main_guideline_ho_085"
+            app:layout_constraintBottom_toTopOf="@id/main_guideline_ho_093"
+            app:layout_constraintLeft_toRightOf="@id/main_guideline_ver_010"
+            app:layout_constraintRight_toLeftOf="@id/main_guideline_ver_095"
+            android:background="@drawable/main_button_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                style="@style/AVLoadingIndicatorView.Small"
+                app:indicatorColor="@color/light_blue"
+                app:indicatorName="BallGridBeatIndicator"
+                android:id="@+id/main_history_animation_view"
+                android:layout_margin="10dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textColor="@color/black"
+                android:text="查看歷史紀錄"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
